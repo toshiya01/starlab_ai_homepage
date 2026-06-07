@@ -27,6 +27,45 @@
   
   <!-- Custom Style -->
   <link rel="stylesheet" href="/src/style.css">
+
+  <!-- Structured Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "스타랩",
+    "alternateName": "Starlab",
+    "description": "부산, 울산, 경남(부울경) 지역 비즈니스의 성공적인 DX를 위한 부산 AI 교육, 부산 AI 컨설팅, 부산 AI 마케팅 및 인공지능 강의/강사 파견 전문 파트너",
+    "url": "https://starlab-ai.com",
+    "logo": "https://starlab-ai.com/assets/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Busan",
+      "addressCountry": "KR"
+    },
+    "areaServed": [
+      {
+        "@type": "AdministrativeArea",
+        "name": "Busan"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Ulsan"
+      },
+      {
+        "@type": "AdministrativeArea",
+        "name": "Gyeongsangnam-do"
+      }
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence Education",
+      "AI Consulting",
+      "AI Marketing",
+      "Generative AI Lecture",
+      "AI Instructor"
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Background Panorama Container -->
@@ -159,6 +198,21 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <span class="footer-logo">STARLAB</span>
+          <p>부산, 울산, 경남 비즈니스의 성공적인 DX 파트너</p>
+        </div>
+        <div class="footer-info">
+          <p><strong>대표 문의</strong>: contact@starlab-ai.com</p>
+          <p><strong>위치</strong>: 부산광역시 영도구 해양로 301-1 스타랩 타워 12F (부울경 본부)</p>
+          <p class="copyright">© 2026 STARLAB. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <!-- Script Entry -->
