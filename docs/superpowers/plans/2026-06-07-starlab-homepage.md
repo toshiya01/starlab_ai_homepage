@@ -17,7 +17,7 @@
 - Create: `vite.config.js`
 - Test: `tests/utils.test.js`
 
-- [ ] **Step 1: Create package.json**
+- [x] **Step 1: Create package.json**
   Create `package.json` with scripts for dev, build, preview, and test.
   ```json
   {
@@ -39,7 +39,7 @@
   }
   ```
 
-- [ ] **Step 2: Create vite.config.js**
+- [x] **Step 2: Create vite.config.js**
   Create `vite.config.js` to configure the Vite build process.
   ```javascript
   import { defineConfig } from 'vite';
@@ -56,11 +56,11 @@
   });
   ```
 
-- [ ] **Step 3: Run npm install**
+- [x] **Step 3: Run npm install**
   Run: `npm install`
   Expected: Installation finishes successfully and creates `node_modules`.
 
-- [ ] **Step 4: Commit**
+- [x] **Step 4: Commit**
   Run:
   ```bash
   git add package.json vite.config.js package-lock.json
