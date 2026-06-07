@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   if (typeof pannellum !== 'undefined') {
     const viewer = pannellum.viewer('panorama', {
       type: 'equirectangular',
-      panorama: '/public/assets/starlab-studio-360.webp',
+      panorama: '/assets/starlab-studio-360.webp',
       autoLoad: true,
       autoRotate: -0.8,
       mouseZoom: true,
