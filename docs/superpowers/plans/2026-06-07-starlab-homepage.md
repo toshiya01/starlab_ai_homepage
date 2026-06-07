@@ -75,7 +75,7 @@
 - Create: `src/utils.js`
 - Create: `tests/utils.test.js`
 
-- [ ] **Step 1: Write failing test for isWebGLSupported**
+- [x] **Step 1: Write failing test for isWebGLSupported**
   Create `tests/utils.test.js` with a test case checking that WebGL is detected.
   ```javascript
   import { describe, it, expect } from 'vitest';
@@ -115,11 +115,11 @@
   });
   ```
 
-- [ ] **Step 2: Run test to verify it fails**
+- [x] **Step 2: Run test to verify it fails**
   Run: `npm run test`
   Expected: FAIL with "isWebGLSupported is not defined" or similar export error.
 
-- [ ] **Step 3: Implement minimal code in src/utils.js**
+- [x] **Step 3: Implement minimal code in src/utils.js**
   Create `src/utils.js` and implement the detection helper.
   ```javascript
   export function isWebGLSupported(win = window) {
@@ -133,11 +133,11 @@
   }
   ```
 
-- [ ] **Step 4: Run test to verify it passes**
+- [x] **Step 4: Run test to verify it passes**
   Run: `npm run test`
   Expected: PASS
 
-- [ ] **Step 5: Commit**
+- [x] **Step 5: Commit**
   Run:
   ```bash
   git add src/utils.js tests/utils.test.js
