@@ -151,7 +151,7 @@
 **Files:**
 - Create: `index.html`
 
-- [ ] **Step 1: Create index.html layout**
+- [x] **Step 1: Create index.html layout**
   Write the index.html file with SEO meta tags, title, link to CSS, script entry, and external CDN for Pannellum. Make sure to use combinations of [부산, 울산, 경남, 부울경] + [AI, 인공지능] + [교육, 강의, 강사, 컨설팅, 마케팅].
   ```html
   <!DOCTYPE html>
@@ -251,13 +251,13 @@
   </html>
   ```
 
-- [ ] **Step 2: Verify HTML loading in dev mode**
+- [x] **Step 2: Verify HTML loading in dev mode**
   Create a temporary empty file `src/style.css` and `src/main.js` so that Vite doesn't fail.
   Run: `touch src/style.css src/main.js`
   Run: `npm run build`
   Expected: Build succeeds and produces the static page.
 
-- [ ] **Step 3: Commit**
+- [x] **Step 3: Commit**
   Run:
   ```bash
   git add index.html src/style.css src/main.js
