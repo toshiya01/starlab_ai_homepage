@@ -1,9 +1,12 @@
-export function isWebGLSupported(win = window) {
+export function isWebGLSupported(win) {
   try {
-    const canvas = win.document.createElement('canvas');
-    return !!(win.WebGLRenderingContext && 
+    const currentWindow = win || (typeof window !== 'undefined' ? window : null);
+    if (!currentWindow) return false;
+    const canvas = currentWindow.document.createElement('canvas');
+    return !!(currentWindow.WebGLRenderingContext && 
       (canvas.getContext('webgl') || canvas.getContext('experimental-webgl')));
   } catch (e) {
     return false;
   }
 }
+

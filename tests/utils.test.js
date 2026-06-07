@@ -32,4 +32,15 @@ describe('isWebGLSupported', () => {
     };
     expect(isWebGLSupported(mockWindow)).toBe(false);
   });
+
+  it('should return false when canvas creation throws an error', () => {
+    const mockWindow = {
+      WebGLRenderingContext: {},
+      document: {
+        createElement: () => { throw new Error('Mock Canvas Error'); }
+      }
+    };
+    expect(isWebGLSupported(mockWindow)).toBe(false);
+  });
 });
+
