@@ -251,6 +251,7 @@ section { padding: 110px var(--pad-x); }
   font-weight: 800;
   letter-spacing: -0.03em;
   margin-bottom: 56px;
+  overflow-wrap: break-word;
 }
 
 /* ============================================================
