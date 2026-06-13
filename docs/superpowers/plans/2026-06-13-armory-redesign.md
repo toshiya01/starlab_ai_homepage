@@ -771,6 +771,7 @@ section { padding: 110px var(--pad-x); }
   font-weight: 800;
   letter-spacing: -0.03em;
   margin-bottom: 56px;
+  overflow-wrap: break-word;
 }
 
 /* ============================================================
@@ -1133,10 +1134,9 @@ function initHeaderShrink() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  initMarquee();
-
   if (REDUCED_MOTION) {
     // CSS already forces visible state; ensure metric numbers show final values.
+    // Marquee stays single-copy: its animation is disabled, so no duplication needed.
     document.querySelectorAll('.met-num').forEach((el) => {
       el.textContent = el.dataset.count + (el.dataset.suffix || '');
     });
@@ -1144,6 +1144,7 @@ window.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
+  initMarquee();
   initCharSplit();
   initReveal();
   initParallax();
