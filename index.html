@@ -4,31 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>스타랩 | 부산 AI 교육 · 울산 인공지능 강의 · 경남 AI 강사 특강 전문</title>
-  
+
   <!-- SEO Meta Tags -->
   <meta name="description" content="부산 AI 교육, 울산 인공지능 강의, 경남 AI 강사 및 부울경 AI 워크숍/특강/컨설팅/마케팅까지! 스타랩은 지역 비즈니스의 DX 성장을 지원하는 인공지능 전문 강사진과 솔루션을 제공합니다.">
   <meta name="keywords" content="부산 AI 교육, 부산 인공지능 강의, 부산 AI 강사, 부산 AI 특강, 부산 AI 워크숍, 부산 인공지능 교육, 부산 생성형 AI 강의, 울산 AI 교육, 울산 인공지능 강의, 울산 AI 컨설팅, 경남 AI 교육, 경남 AI 강사, 경남 AI 마케팅, 부울경 AI 특강, 부울경 인공지능 워크숍, 스타랩, Starlab">
   <meta name="author" content="Starlab">
-  
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://starlab.ai.kr/">
+  <meta name="naver-site-verification" content="">
+
   <!-- Open Graph (SNS Optimization) -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="스타랩 | 부산 AI 교육 · 울산 인공지능 강의 · 경남 AI 강사 특강">
   <meta property="og:description" content="부산, 울산, 경남 지역의 비즈니스를 혁신하는 AI 교육, 강의, 강사 파견 및 비즈니스 컨설팅/마케팅 전문 스타랩.">
-  <meta property="og:image" content="/assets/starlab-og.png">
-  <meta property="og:url" content="https://starlab-ai.com">
-  
-  <!-- Google Fonts -->
+  <meta property="og:image" content="https://starlab.ai.kr/assets/starlab-og.png">
+  <meta property="og:url" content="https://starlab.ai.kr/">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="스타랩 Starlab">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="스타랩 | 부산 AI 교육 · 울산 인공지능 강의 · 경남 AI 강사 특강">
+  <meta name="twitter:description" content="부산, 울산, 경남 지역의 비즈니스를 혁신하는 AI 교육, 강의, 강사 파견 및 비즈니스 컨설팅/마케팅 전문 스타랩.">
+  <meta name="twitter:image" content="https://starlab.ai.kr/assets/starlab-og.png">
+
+  <!-- Fonts: Pretendard dynamic subset + Geist Mono -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-  
-  <!-- Pannellum CSS CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
-  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap">
+
   <!-- Custom Style -->
   <link rel="stylesheet" href="/src/style.css">
 
-  <!-- Structured Schema JSON-LD -->
+  <!-- Structured Schema JSON-LD: Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -36,26 +46,19 @@
     "name": "스타랩",
     "alternateName": "Starlab",
     "description": "부산, 울산, 경남(부울경) 지역 비즈니스의 성공적인 DX를 위한 부산 AI 교육, 부산 AI 컨설팅, 부산 AI 마케팅 및 인공지능 강의/강사 파견 전문 파트너",
-    "url": "https://starlab-ai.com",
-    "logo": "https://starlab-ai.com/assets/logo.png",
+    "url": "https://starlab.ai.kr",
+    "logo": "https://starlab.ai.kr/assets/logo.png",
+    "email": "contact@starlab-ai.com",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "해양로 301-1 스타랩 타워 12F",
       "addressLocality": "Busan",
       "addressCountry": "KR"
     },
     "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Busan"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Ulsan"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Gyeongsangnam-do"
-      }
+      { "@type": "AdministrativeArea", "name": "Busan" },
+      { "@type": "AdministrativeArea", "name": "Ulsan" },
+      { "@type": "AdministrativeArea", "name": "Gyeongsangnam-do" }
     ],
     "knowsAbout": [
       "Artificial Intelligence Education",
@@ -66,158 +69,230 @@
     ]
   }
   </script>
+
+  <!-- Structured Schema JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "부산, 울산, 경남(부울경) 지역에서 스타랩의 AI 교육과 특강 강의는 어떻게 신청하나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "스타랩의 교육 서비스는 온라인 문의 양식을 통해 교육 대상, 기간, 희망 주제를 접수해 주시면 개별 맞춤형 상담 전화를 드립니다. 기업 임직원 맞춤형 워크숍부터 대규모 인공지능 강의까지 다채로운 프로그램이 마련되어 있습니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "스타랩 AI 강사진의 전문성과 교육 분야는 어떻게 되나요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "스타랩은 부산 및 경남 지역에서 활발히 검증된 생성형 AI 전문 강사진을 보유하고 있습니다. 단순 툴 소개에 그치지 않고, 업무 자동화, 기획서 작성, 코딩 보조, AI 예술 디자인 생성에 이르기까지 비즈니스 실무에 직결되는 고효율 인공지능 특강을 책임집니다."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "부산 AI 컨설팅 및 인공지능 마케팅 도입 시 기대 효과는 무엇인가요?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "중소기업의 디지털 전환(DX) 시 AI 컨설팅은 불필요한 비용을 최소화하고 꼭 필요한 자율 에이전트 및 LLM 솔루션을 설계해 드립니다. 또한 AI 마케팅 도입 시, 콘텐츠 제작 속도를 혁신적으로 줄여 마케팅 예산 대비 전환 성과를 극대화할 수 있습니다."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
-  <!-- Background Panorama Container -->
-  <div id="panorama-container">
-    <div id="panorama"></div>
-    <div class="panorama-fallback"></div>
-    <div class="panorama-overlay"></div>
-  </div>
+  <!-- GNB Header -->
+  <header class="main-header" id="main-header">
+    <a href="#" class="logo" aria-label="스타랩 홈으로">
+      <span class="logo-bolt" aria-hidden="true"></span>STARLAB
+    </a>
+    <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="상담 신청하기 (새 창)" class="btn btn-primary header-cta">
+      <span class="btn-x" aria-hidden="true">↗</span>상담 신청하기
+    </a>
+  </header>
 
-  <!-- UI Overlay Wrap -->
-  <div class="ui-wrapper">
-    <!-- GNB Header -->
-    <header class="main-header">
-      <div class="header-container">
-        <a href="#" class="logo">STARLAB</a>
-        <nav class="nav-links">
-          <a href="#services-edu">AI 교육·강의</a>
-          <a href="#services-consulting">AI 컨설팅</a>
-          <a href="#services-marketing">AI 마케팅</a>
-          <a href="#faq">자주 묻는 질문</a>
-        </nav>
-        <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="상담 신청하기 (새 창)" class="btn-cta header-cta">상담 신청하기</a>
-      </div>
-    </header>
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero" aria-label="스타랩 소개">
+      <div class="hero-bg" aria-hidden="true"></div>
 
-    <!-- Main Layout -->
-    <main class="main-content">
-      <!-- Hero Section -->
-      <section id="hero" class="hero-section">
-        <div class="hero-content">
-          <span class="hero-tagline">부산·울산·경남 No.1 인공지능 파트너</span>
-          <h1 class="hero-title">부산 AI 교육과<br>인공지능 강의의 기준<br><span class="brand-highlight">스타랩</span></h1>
-          <p class="hero-description">
-            부울경 지역의 기업, 공공기관 및 대학교를 위해 최첨단 생성형 AI 특강, 비즈니스 자동화 워크숍 및 검증된 전문 AI 강사를 매칭합니다. 기업의 성공적인 AI 컨설팅과 마케팅 혁신을 시작하세요.
-          </p>
-          <div class="hero-actions">
-            <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="AI 교육 및 특강 문의 (새 창)" class="btn-cta hero-cta-primary">AI 교육 및 특강 문의</a>
-            <a href="#services-edu" class="btn-cta hero-cta-secondary">서비스 자세히 보기</a>
-          </div>
-        </div>
-        
-        <!-- Stat cards layout -->
-        <div class="hero-stats-panel">
-          <div class="stat-card">
-            <span class="stat-value">500+명</span>
-            <span class="stat-label">부울경 AI 교육 수료생</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-value">98%</span>
-            <span class="stat-label">강의 만족도 지표</span>
-          </div>
-          <div class="stat-card">
-            <span class="stat-value">50+건</span>
-            <span class="stat-label">기업 AI 컨설팅 실적</span>
-          </div>
-        </div>
-      </section>
+      <nav class="hero-nav" aria-label="주요 서비스 바로가기">
+        <a href="#services-edu"><span class="mono" aria-hidden="true">01</span>AI 교육·강의</a>
+        <a href="#services-consulting"><span class="mono" aria-hidden="true">02</span>AI 컨설팅</a>
+        <a href="#services-marketing"><span class="mono" aria-hidden="true">03</span>AI 마케팅</a>
+        <a href="#faq"><span class="mono" aria-hidden="true">04</span>자주 묻는 질문</a>
+      </nav>
 
-      <!-- Services Section -->
-      <section id="services" class="services-section">
-        <h2 class="section-title">스타랩 비즈니스 솔루션</h2>
-        
-        <div class="services-grid">
-          <div id="services-edu" class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-            </div>
-            <h3>AI 교육 · 강의 및 강사 파견</h3>
-            <p class="service-summary">부산, 울산, 경남 지역을 아우르는 검증된 AI 전문 강사 매칭</p>
-            <ul class="service-details" role="list">
-              <li role="listitem"><strong>부산 AI 특강</strong>: 최신 트렌드를 다루는 단기 세미나</li>
-              <li role="listitem"><strong>울산 AI 강의</strong>: 제조업 DX를 위한 인공지능 기초</li>
-              <li role="listitem"><strong>경남 AI 강사 파견</strong>: 대학 및 기업 실무 생성형 AI 워크숍</li>
-            </ul>
-            <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="AI 강의 및 특강 문의하기 (새 창)" class="service-link">AI 강의 및 특강 문의하기 <span aria-hidden="true">→</span></a>
-          </div>
-
-          <div id="services-consulting" class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
-            </div>
-            <h3>부산 AI 컨설팅 및 도입 설계</h3>
-            <p class="service-summary">로컬 비즈니스의 성공적인 DX를 위한 AI 아키텍처 로드맵</p>
-            <ul class="service-details" role="list">
-              <li role="listitem">비즈니스 구조 분석 및 도입 타당성 검토</li>
-              <li role="listitem">자율형 AI 에이전트 도입 기획 및 아키텍처 설계</li>
-              <li role="listitem">국가 R&D 및 지자체 AI 솔루션 사업 연계</li>
-            </ul>
-            <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="무료 컨설팅 상담 신청 (새 창)" class="service-link">무료 컨설팅 상담 신청 <span aria-hidden="true">→</span></a>
-          </div>
-
-          <div id="services-marketing" class="service-card">
-            <div class="service-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-            </div>
-            <h3>부산 AI 마케팅 및 자동화</h3>
-            <p class="service-summary">인공지능 도구를 활용한 대량 콘텐츠 제작 및 성과 극대화</p>
-            <ul class="service-details" role="list">
-              <li role="listitem">AI 광고 문구 및 소셜 미디어 디자인 생성 자동화</li>
-              <li role="listitem">오디언스 데이터 분석 기반 고도화된 리드 타겟팅</li>
-              <li role="listitem">AI 기반 마케팅 워크플로우 생산성 300% 향상</li>
-            </ul>
-            <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="AI 마케팅 제안 요청하기 (새 창)" class="service-link">AI 마케팅 제안 요청하기 <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
-      </section>
-
-      <!-- GEO optimized Q&A (FAQ) Section -->
-      <section id="faq" class="faq-section">
-        <h2 class="section-title">자주 묻는 질문 (FAQ)</h2>
-        <div class="faq-list">
-          <div class="faq-item">
-            <h3 class="faq-question">Q. 부산, 울산, 경남(부울경) 지역에서 스타랩의 AI 교육과 특강 강의는 어떻게 신청하나요?</h3>
-            <p class="faq-answer">
-              A. 스타랩의 교육 서비스는 <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="온라인 문의 양식 (새 창)">온라인 문의 양식</a>을 통해 교육 대상, 기간, 희망 주제를 접수해 주시면 개별 맞춤형 상담 전화를 드립니다. 기업 임직원 맞춤형 워크숍부터 대규모 인공지능 강의까지 다채로운 프로그램이 마련되어 있습니다.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">Q. 스타랩 AI 강사진의 전문성과 교육 분야는 어떻게 되나요?</h3>
-            <p class="faq-answer">
-              A. 스타랩은 부산 및 경남 지역에서 활발히 검증된 생성형 AI 전문 강사진을 보유하고 있습니다. 단순 툴 소개에 그치지 않고, 업무 자동화, 기획서 작성, 코딩 보조, AI 예술 디자인 생성에 이르기까지 비즈니스 실무에 직결되는 고효율 인공지능 특강을 책임집니다.
-            </p>
-          </div>
-          <div class="faq-item">
-            <h3 class="faq-question">Q. 부산 AI 컨설팅 및 인공지능 마케팅 도입 시 기대 효과는 무엇인가요?</h3>
-            <p class="faq-answer">
-              A. 중소기업의 디지털 전환(DX) 시 AI 컨설팅은 불필요한 비용을 최소화하고 꼭 필요한 자율 에이전트 및 LLM 솔루션을 설계해 드립니다. 또한 AI 마케팅 도입 시, 콘텐츠 제작 속도를 혁신적으로 줄여 마케팅 예산 대비 전환 성과를 극대화할 수 있습니다.
-            </p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-      <div class="footer-container">
-        <div class="footer-brand">
-          <span class="footer-logo">STARLAB</span>
-          <p>부산, 울산, 경남 비즈니스의 성공적인 DX 파트너</p>
-        </div>
-        <div class="footer-info">
-          <p><strong>대표 문의</strong>: contact@starlab-ai.com</p>
-          <p><strong>위치</strong>: 부산광역시 영도구 해양로 301-1 스타랩 타워 12F (부울경 본부)</p>
-          <p class="copyright">© 2026 STARLAB. All rights reserved.</p>
+      <div class="hero-main">
+        <p class="hero-tagline mono">// 부산·울산·경남 No.1 인공지능 파트너</p>
+        <h1 class="hero-title">
+          <span class="line-mask"><span>부산 AI 교육과</span></span>
+          <span class="line-mask"><span>인공지능 강의의 기준</span></span>
+          <span class="line-mask"><span>스타랩</span></span>
+        </h1>
+        <p class="hero-desc reveal reveal-d2">
+          부울경 지역의 기업, 공공기관 및 대학교를 위해 최첨단 생성형 AI 특강, 비즈니스 자동화 워크숍 및 검증된 전문 AI 강사를 매칭합니다. 기업의 성공적인 AI 컨설팅과 마케팅 혁신을 시작하세요.
+        </p>
+        <div class="hero-actions reveal reveal-d3">
+          <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="AI 교육 및 특강 문의 (새 창)" class="btn btn-primary">
+            <span class="btn-x" aria-hidden="true">↗</span>AI 교육 및 특강 문의
+          </a>
+          <a href="#services" class="btn btn-ghost">서비스 자세히 보기</a>
         </div>
       </div>
-    </footer>
-  </div>
+    </section>
+
+    <!-- Keyword Marquee (decorative) -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track">
+        <span><b>부산 AI 교육</b> · 생성형 AI 특강</span>
+        <span><b>울산 인공지능 강의</b> · 제조업 DX</span>
+        <span><b>경남 AI 강사</b> · 실무 워크숍</span>
+        <span><b>AI 컨설팅</b> · 도입 설계</span>
+        <span><b>AI 마케팅</b> · 자동화</span>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <p class="sec-label mono reveal">// Services</p>
+      <h2 class="sec-title split-chars">스타랩 비즈니스 솔루션</h2>
+
+      <div class="svc-grid">
+        <article id="services-edu" class="svc reveal">
+          <div class="svc-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>AI 교육 · 강의 및 강사 파견</h3>
+          <p class="svc-summary">부산, 울산, 경남 지역을 아우르는 검증된 AI 전문 강사 매칭</p>
+          <ul class="svc-details">
+            <li><strong>부산 AI 특강</strong>: 최신 트렌드를 다루는 단기 세미나</li>
+            <li><strong>울산 AI 강의</strong>: 제조업 DX를 위한 인공지능 기초</li>
+            <li><strong>경남 AI 강사 파견</strong>: 대학 및 기업 실무 생성형 AI 워크숍</li>
+          </ul>
+          <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="AI 강의 및 특강 문의하기 (새 창)" class="svc-link">AI 강의 및 특강 문의하기 <i aria-hidden="true">→</i></a>
+        </article>
+
+        <article id="services-consulting" class="svc reveal reveal-d1">
+          <div class="svc-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <h3>부산 AI 컨설팅 및 도입 설계</h3>
+          <p class="svc-summary">로컬 비즈니스의 성공적인 DX를 위한 AI 아키텍처 로드맵</p>
+          <ul class="svc-details">
+            <li>비즈니스 구조 분석 및 도입 타당성 검토</li>
+            <li>자율형 AI 에이전트 도입 기획 및 아키텍처 설계</li>
+            <li>국가 R&amp;D 및 지자체 AI 솔루션 사업 연계</li>
+          </ul>
+          <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="무료 컨설팅 상담 신청 (새 창)" class="svc-link">무료 컨설팅 상담 신청 <i aria-hidden="true">→</i></a>
+        </article>
+
+        <article id="services-marketing" class="svc reveal reveal-d2">
+          <div class="svc-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <h3>부산 AI 마케팅 및 자동화</h3>
+          <p class="svc-summary">인공지능 도구를 활용한 대량 콘텐츠 제작 및 성과 극대화</p>
+          <ul class="svc-details">
+            <li>AI 광고 문구 및 소셜 미디어 디자인 생성 자동화</li>
+            <li>오디언스 데이터 분석 기반 고도화된 리드 타겟팅</li>
+            <li>AI 기반 마케팅 워크플로우 생산성 300% 향상</li>
+          </ul>
+          <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="AI 마케팅 제안 요청하기 (새 창)" class="svc-link">AI 마케팅 제안 요청하기 <i aria-hidden="true">→</i></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section id="metrics" class="metrics" aria-label="스타랩 실적">
+      <p class="sec-label mono reveal">// Track Record</p>
+      <p class="metrics-lead reveal">숫자로 증명하는 부울경 AI 교육 성과. <em>모든 교육과 컨설팅의 결과를 측정합니다.</em></p>
+      <div class="met-grid">
+        <div class="met reveal">
+          <span class="met-num" data-count="500" data-suffix="+">500+</span>
+          <span class="met-cap mono">부울경 AI 교육 수료생 (명)</span>
+        </div>
+        <div class="met reveal reveal-d1">
+          <span class="met-num" data-count="98" data-suffix="%">98%</span>
+          <span class="met-cap mono">강의 만족도 지표</span>
+        </div>
+        <div class="met reveal reveal-d2">
+          <span class="met-num" data-count="50" data-suffix="+">50+</span>
+          <span class="met-cap mono">기업 AI 컨설팅 실적 (건)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- GEO optimized Q&A (FAQ) Section — light -->
+    <section id="faq" class="faq">
+      <p class="sec-label mono reveal">// FAQ</p>
+      <h2 class="sec-title split-chars">자주 묻는 질문</h2>
+      <p class="faq-sub reveal">부산·울산·경남 AI 교육과 컨설팅에 대해 가장 많이 받는 질문들입니다.</p>
+
+      <div class="faq-row reveal">
+        <span class="faq-idx mono" aria-hidden="true">/1</span>
+        <div>
+          <h3>부산, 울산, 경남(부울경) 지역에서 스타랩의 AI 교육과 특강 강의는 어떻게 신청하나요?</h3>
+          <p>스타랩의 교육 서비스는 <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="온라인 문의 양식 (새 창)">온라인 문의 양식</a>을 통해 교육 대상, 기간, 희망 주제를 접수해 주시면 개별 맞춤형 상담 전화를 드립니다. 기업 임직원 맞춤형 워크숍부터 대규모 인공지능 강의까지 다채로운 프로그램이 마련되어 있습니다.</p>
+        </div>
+      </div>
+      <div class="faq-row reveal">
+        <span class="faq-idx mono" aria-hidden="true">/2</span>
+        <div>
+          <h3>스타랩 AI 강사진의 전문성과 교육 분야는 어떻게 되나요?</h3>
+          <p>스타랩은 부산 및 경남 지역에서 활발히 검증된 생성형 AI 전문 강사진을 보유하고 있습니다. 단순 툴 소개에 그치지 않고, 업무 자동화, 기획서 작성, 코딩 보조, AI 예술 디자인 생성에 이르기까지 비즈니스 실무에 직결되는 고효율 인공지능 특강을 책임집니다.</p>
+        </div>
+      </div>
+      <div class="faq-row reveal">
+        <span class="faq-idx mono" aria-hidden="true">/3</span>
+        <div>
+          <h3>부산 AI 컨설팅 및 인공지능 마케팅 도입 시 기대 효과는 무엇인가요?</h3>
+          <p>중소기업의 디지털 전환(DX) 시 AI 컨설팅은 불필요한 비용을 최소화하고 꼭 필요한 자율 에이전트 및 LLM 솔루션을 설계해 드립니다. 또한 AI 마케팅 도입 시, 콘텐츠 제작 속도를 혁신적으로 줄여 마케팅 예산 대비 전환 성과를 극대화할 수 있습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Band -->
+    <section class="cta-band" aria-label="상담 신청">
+      <div class="cta-txt reveal">
+        <strong>AI 도입, 지금 시작하세요</strong>
+        <p>교육·컨설팅·마케팅 무엇이든 부담 없이 문의해 주세요. 24시간 내 회신드립니다.</p>
+      </div>
+      <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="상담 신청하기 (새 창)" class="btn btn-primary reveal reveal-d1">
+        <span class="btn-x" aria-hidden="true">↗</span>상담 신청하기
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="foot-cols">
+      <div class="reveal">
+        <p class="col-label mono">// Contact</p>
+        <p>contact@starlab-ai.com</p>
+        <p>부산광역시 영도구 해양로 301-1 스타랩 타워 12F (부울경 본부)</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <p class="col-label mono">// Services</p>
+        <a href="#services-edu">AI 교육·강의</a>
+        <a href="#services-consulting">AI 컨설팅</a>
+        <a href="#services-marketing">AI 마케팅</a>
+      </div>
+      <div class="reveal reveal-d2">
+        <p class="col-label mono">// Info</p>
+        <a href="#faq">자주 묻는 질문</a>
+        <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="상담 신청 (새 창)">상담 신청</a>
+      </div>
+    </div>
+    <p class="wordmark reveal" aria-hidden="true">STARLAB</p>
+    <p class="copyright mono">© 2026 STARLAB. ALL RIGHTS RESERVED.</p>
+  </footer>
 
   <!-- Script Entry -->
   <script type="module" src="/src/main.js"></script>
-  <!-- Pannellum JS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js" defer></script>
 </body>
 </html>
