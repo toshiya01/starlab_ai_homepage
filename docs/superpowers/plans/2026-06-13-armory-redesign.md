@@ -230,7 +230,7 @@ git commit -m "feat: replace WebGL util with count-up easing pure functions (TDD
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap">
 
   <!-- Custom Style -->
@@ -305,7 +305,7 @@ git commit -m "feat: replace WebGL util with count-up easing pure functions (TDD
 <body>
   <!-- GNB Header -->
   <header class="main-header" id="main-header">
-    <a href="#" class="logo" aria-label="스타랩 홈으로">
+    <a href="/" class="logo" aria-label="스타랩 홈으로">
       <span class="logo-bolt" aria-hidden="true"></span>STARLAB
     </a>
     <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="상담 신청하기 (새 창)" class="btn btn-primary header-cta">
@@ -408,7 +408,7 @@ git commit -m "feat: replace WebGL util with count-up easing pure functions (TDD
     <!-- Metrics Section -->
     <section id="metrics" class="metrics" aria-label="스타랩 실적">
       <p class="sec-label mono reveal">// Track Record</p>
-      <p class="metrics-lead reveal">숫자로 증명하는 부울경 AI 교육 성과. <em>모든 교육과 컨설팅의 결과를 측정합니다.</em></p>
+      <h2 class="metrics-lead reveal">숫자로 증명하는 부울경 AI 교육 성과. <em>모든 교육과 컨설팅의 결과를 측정합니다.</em></h2>
       <div class="met-grid">
         <div class="met reveal">
           <span class="met-num" data-count="500" data-suffix="+">500+</span>
@@ -457,7 +457,7 @@ git commit -m "feat: replace WebGL util with count-up easing pure functions (TDD
     <!-- CTA Band -->
     <section class="cta-band" aria-label="상담 신청">
       <div class="cta-txt reveal">
-        <strong>AI 도입, 지금 시작하세요</strong>
+        <h2>AI 도입, 지금 시작하세요</h2>
         <p>교육·컨설팅·마케팅 무엇이든 부담 없이 문의해 주세요. 24시간 내 회신드립니다.</p>
       </div>
       <a href="https://tally.so/r/n12345" target="_blank" rel="noopener noreferrer" aria-label="상담 신청하기 (새 창)" class="btn btn-primary reveal reveal-d1">
@@ -895,7 +895,7 @@ section { padding: 110px var(--pad-x); }
   padding: 72px var(--pad-x);
   flex-wrap: wrap;
 }
-.cta-txt strong {
+.cta-txt h2 {
   display: block;
   font-size: clamp(22px, 3vw, 34px);
   font-weight: 800;
