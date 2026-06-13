@@ -22,7 +22,7 @@ function initCharSplit() {
     [...text].forEach((ch, i) => {
       const span = document.createElement('span');
       span.className = 'char';
-      span.textContent = ch === ' ' ? ' ' : ch;
+      span.textContent = ch === ' ' ? ' ' : ch;
       span.style.transitionDelay = `${i * CHAR_STAGGER_MS}ms`;
       wrapper.appendChild(span);
     });
