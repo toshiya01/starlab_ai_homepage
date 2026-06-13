@@ -1,46 +1,43 @@
 import { describe, it, expect } from 'vitest';
-import { isWebGLSupported } from '../src/utils.js';
+import { easeOutCubic, countValue } from '../src/utils.js';
 
-describe('isWebGLSupported', () => {
-  it('should return true when WebGL context is available', () => {
-    const mockCanvas = {
-      getContext: (type) => {
-        if (type === 'webgl' || type === 'experimental-webgl') {
-          return {};
-        }
-        return null;
-      }
-    };
-    const mockWindow = {
-      WebGLRenderingContext: {},
-      document: {
-        createElement: () => mockCanvas
-      }
-    };
-    expect(isWebGLSupported(mockWindow)).toBe(true);
+describe('easeOutCubic', () => {
+  it('returns 0 at progress 0', () => {
+    expect(easeOutCubic(0)).toBe(0);
   });
 
-  it('should return false when WebGL context is unavailable', () => {
-    const mockCanvas = {
-      getContext: () => null
-    };
-    const mockWindow = {
-      WebGLRenderingContext: {},
-      document: {
-        createElement: () => mockCanvas
-      }
-    };
-    expect(isWebGLSupported(mockWindow)).toBe(false);
+  it('returns 1 at progress 1', () => {
+    expect(easeOutCubic(1)).toBe(1);
   });
 
-  it('should return false when canvas creation throws an error', () => {
-    const mockWindow = {
-      WebGLRenderingContext: {},
-      document: {
-        createElement: () => { throw new Error('Mock Canvas Error'); }
-      }
-    };
-    expect(isWebGLSupported(mockWindow)).toBe(false);
+  it('eases out: midpoint progress is past linear midpoint', () => {
+    expect(easeOutCubic(0.5)).toBeGreaterThan(0.5);
+    expect(easeOutCubic(0.5)).toBeCloseTo(0.875, 5);
+  });
+
+  it('clamps progress below 0 to 0', () => {
+    expect(easeOutCubic(-0.5)).toBe(0);
+  });
+
+  it('clamps progress above 1 to 1', () => {
+    expect(easeOutCubic(1.5)).toBe(1);
   });
 });
 
+describe('countValue', () => {
+  it('returns 0 at progress 0', () => {
+    expect(countValue(500, 0)).toBe(0);
+  });
+
+  it('returns the target at progress 1', () => {
+    expect(countValue(500, 1)).toBe(500);
+  });
+
+  it('returns an eased integer mid-animation', () => {
+    expect(countValue(100, 0.5)).toBe(88); // round(100 * 0.875)
+  });
+
+  it('returns integers for fractional eased values', () => {
+    expect(Number.isInteger(countValue(98, 0.3))).toBe(true);
+  });
+});
