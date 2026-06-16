@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://starlab.ai.kr/sitemap.xml
+Sitemap: https://starlab.ai.kr/rss.xml
